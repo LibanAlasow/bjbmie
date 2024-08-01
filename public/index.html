@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.io</title>
+
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="maincontainer" style="display: flex">
+    <div class="left">
+      <div class="navbutton nav-button-avatar">
+        <div class="inner" style="background-image: url(avatar.png);" onclick="showFrame('avatar')"></div>
+      </div>
+      <div class="navbutton nav-button-avatar">
+        <div class="inner" style="background-image: url(shoppingbag.png);" onclick="showFrame('shop')"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="topnav">
+        <div class="left-top-nav">
+          <h3>Avatar customization</h3>
+        </div>
+        <div class="right-top-nav">
+          <div class="currency">
+            <div class="icon" style="background-image: url(gemcartoon.png);"></div>
+            <div class="value">9,550</div>
+          </div>
+          <div class="currency">
+            <div class="icon" style="background-image: url(arrowup.png);"></div>
+            <div class="value">17</div>
+          </div>
+        </div>
+      </div>
+      <div class="avatar frame">
+        <div class="profile">
+          <div class="displayAvatar">
+
+          </div>
+          <div class="changeProfile">
+            <p class="headline">Username</p>
+            <input class="name-input" placeholder="Kharoof" , autocomplete="off">
+            <p class="headline">Description</p>
+            <textarea class="desc-input" placeholder="Kharoof" , autocomplete="off"></textarea>
+            <button class="save-input" onclick="saveProfile()">Save profile + uniform</button>
+          </div>
+        </div>
+        <div class="owned-cosmetics">
+
+
+        </div>
+      </div>
+      <div class="shop frame">Shop</div>
+    </div>
+  </div>
+  <div class="world" style="display: none">
+    <div class="worldnav"></div>
+    <div class="map">
+      <div class="mapinner"></div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js" integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="./client.js">
+    
+  </script>
+</body>
+</html>

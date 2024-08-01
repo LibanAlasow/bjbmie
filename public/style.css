@@ -1,0 +1,258 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --mainbackgroundcolor3: #ffcaad;
+  --mainbackgroundcolor2: #dba385;
+  --mainbackgroundcolor: #fee5d7
+}
+
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./backdrops/background2.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  animation-name: mapAnim;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Calistoga", serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #454545;
+}
+
+.maincontainer {
+  width: 700px;
+  height: 700px;
+  padding: 10px;
+  display: flex;
+
+}
+
+.maincontainer .left {
+  width: 120px;
+  height: 100%;
+  padding: 10px;
+  background-color: var(--mainbackgroundcolor3);
+}
+
+.maincontainer .right {
+  width: 580px;
+  height: 100%;
+  padding: 10px;
+  background-color: var(--mainbackgroundcolor);
+}
+
+.navbutton {
+  width: 100px;
+  margin-bottom: 10px;
+  height: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbutton .inner {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-color: #001852;
+  border-radius: 15px;
+  border: solid 2px black;
+}
+
+.topnav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbutton-top {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.avatar {
+  display: block;
+}
+
+.shop {
+  display: none;
+}
+
+.profile {
+  height: 220px;
+  padding: 10px;
+  display: flex;
+}
+
+.displayAvatar {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+
+
+}
+
+.changeProfile {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+.cardouter{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.lager {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-input {
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  width: 100%
+}
+
+.desc-input {
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  width: 100%;
+  resize: none;
+  height: 55px
+}
+
+.save-input {
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  width: 100%;
+  resize: none;
+  height: 40px;
+  border: none;
+  background: #3f3fca;
+  color: white;
+  cursor: pointer
+}
+
+.headline {
+  margin: 0;
+  margin-bottom: 5px
+}
+
+.owned-cosmetics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.minilager {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owned-cosmetic {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.right-top-nav {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.right-top-nav .currency {
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--mainbackgroundcolor3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.world {
+  width: 800px;
+  height: 700px;
+  padding: 10px;
+  background-color: var(--mainbackgroundcolor2);
+}
+
+.worldnav {
+  height: 90px;
+  margin-bottom: 10px;
+  background-color: var(--mainbackgroundcolor);
+}
+
+.map {
+  height: 580px;
+  background-color: var(--mainbackgroundcolor3);
+  padding: 10px;
+}
+
+.mapinner {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(map1.jpg);
+}
+
+
+
+@keyframes mapAnim{
+  0% {
+    background-size: 130%;
+  }
+
+  50% {
+    background-size: 120%;
+  }
+
+  100% {
+    background-size: 130%;
+  }
+}
